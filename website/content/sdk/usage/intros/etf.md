@@ -56,7 +56,7 @@ ETFs are categorized into different buckets. Use the code block below as a way t
 ​
 
 ```python
-etf_list = pd.DataFrame.from_dict(openbb.etf.etf_by_category('')).transpose()
+etf_list = pd.DataFrame.from_dict(openbb.etf.etf_by_category(''))
 categories = list(etf_list['category'].drop_duplicates())
 categories = pd.DataFrame(categories[1::], columns = ['Type'])
 
